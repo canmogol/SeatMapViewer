@@ -44,6 +44,7 @@
 		C247B7C5186F0A04000872B6 /* sm_br_blocked.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B7C4186F0A04000872B6 /* sm_br_blocked.png */; };
 		C247B7C7186F0A0B000872B6 /* sm_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B7C6186F0A0B000872B6 /* sm_blank.png */; };
 		C247B7C9186F0B1C000872B6 /* sm_unknown_parameter.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B7C8186F0B1C000872B6 /* sm_unknown_parameter.png */; };
+		C2D6C4C91871970900F8087E /* CMDeleteMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D6C4C81871970900F8087E /* CMDeleteMe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		C247B7C6186F0A0B000872B6 /* sm_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_blank.png; sourceTree = "<group>"; };
 		C247B7C8186F0B1C000872B6 /* sm_unknown_parameter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_unknown_parameter.png; sourceTree = "<group>"; };
 		C247B7CD186F1E52000872B6 /* CMPlaneMapDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPlaneMapDelegate.h; sourceTree = "<group>"; };
+		C2D6C4C71871970900F8087E /* CMDeleteMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDeleteMe.h; sourceTree = "<group>"; };
+		C2D6C4C81871970900F8087E /* CMDeleteMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDeleteMe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +225,8 @@
 		C247B77B186DAEAC000872B6 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				C2D6C4C71871970900F8087E /* CMDeleteMe.h */,
+				C2D6C4C81871970900F8087E /* CMDeleteMe.m */,
 				C247B77C186DAEAC000872B6 /* CMViewController.h */,
 				C247B77D186DAEAC000872B6 /* CMViewController.m */,
 			);
@@ -507,6 +512,7 @@
 				C247B7BA186DAF28000872B6 /* SeatMap.m in Sources */,
 				C247B7BB186DAF28000872B6 /* SeatMapRow.m in Sources */,
 				C247B7C3186DD9D6000872B6 /* UICabinView.m in Sources */,
+				C2D6C4C91871970900F8087E /* CMDeleteMe.m in Sources */,
 				C247B6DE186D71D0000872B6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
