@@ -26,7 +26,8 @@
     // sample xml data
     // get the content data from somewhere meaningful like a server side operation or a web service,
     // this is only for testing purposes
-    NSString *file = @"/Users/alicanmogol/projects/ios/SeatMapViewer/SeatMapViewer/planemap/samplexmls/seatMap.xml";
+    //NSString *file = @"/Users/alicanmogol/projects/ios/SeatMapViewer/SeatMapViewer/planemap/samplexmls/seatMap.xml";
+    NSString *file = [[NSBundle mainBundle] pathForResource:@"seatMap" ofType:@"xml"];
     NSData* contentData = [[NSData alloc] initWithContentsOfFile:file];
     
     
