@@ -19,3 +19,13 @@ DerivedData
 
 #CocoaPods
 Pods
+*.bak
+*~
+.gitignore
+.idea
+.idea/*
+.iml
+.history
+.svn
+.svn/*
+
