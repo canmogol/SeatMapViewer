@@ -42,7 +42,7 @@
     
     // below are visual aids, may be discarded
     // set scroll view's width and height
-    self.planeMapView.contentSize = CGSizeMake(planeView.frame.size.width+170, planeView.frame.size.height);
+    self.planeMapView.contentSize = CGSizeMake(planeView.frame.size.width, planeView.frame.size.height);
     // set the scroll view's position to beginning of the plane map
     [[self planeMapView] setContentOffset:CGPointMake(planeView.frame.size.width, 0)];
     // show plane view
