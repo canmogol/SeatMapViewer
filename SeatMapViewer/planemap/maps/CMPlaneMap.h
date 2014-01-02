@@ -17,6 +17,7 @@
 @property int unitHeight;
 @property float scaleFactor;
 @property (weak) id <CMPlaneMapDelegate> planeMapDelegate;
+@property (nonatomic, strong) NSMutableDictionary* imagesAndDescription;
 
 +(UIView*)planeMapFromXmlData:(NSData*) content withPlaneMapDelegate:(id)planeMapDelegate withScaleFactor:(float)scale;
 

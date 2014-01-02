@@ -10,7 +10,7 @@
 
 @implementation CMPlaneMap
 
-@synthesize unitWidth, unitHeight, scaleFactor, planeMapDelegate;
+@synthesize unitWidth, unitHeight, scaleFactor, planeMapDelegate, imagesAndDescription;
 
 - (id)initWithScaleFactor:(float)scale
 {
@@ -19,6 +19,7 @@
         scaleFactor = scale;
         unitHeight = 30*scaleFactor;
         unitWidth = 65*scaleFactor;
+        imagesAndDescription = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -185,6 +186,7 @@
             Seat* seat = [cabinElement seat];
             // [seat seatType] => CHECKED_IN,UNUSABLE,AVAILABLE,LEAST_PREFERABLE etc.
             NSString* imageName = [[NSString alloc] initWithFormat:@"sm_%@.png",[[seat seatType] lowercaseString]];
+            [imagesAndDescription setObject:[[seat seatType] lowercaseString] forKey:imageName];
             image = [UIImage imageNamed:imageName];
         }else{
             // EXIT, WING, BLANK etc.
@@ -197,6 +199,7 @@
                 }
             }else{
                 imageName = [[NSString alloc] initWithFormat:@"sm_%@.png",[[cabinElement type] lowercaseString]];
+                [imagesAndDescription setObject:[[cabinElement type] lowercaseString] forKey:imageName];
             }
             image = [UIImage imageNamed:imageName];
         }
@@ -224,6 +227,7 @@
                 propertyImage = [self resizeWithUnit:propertyImage];
             }
             [cabinElementView addSubview: [[UIImageView alloc] initWithImage:propertyImage]];
+            [imagesAndDescription setObject:@"Handicapped" forKey:@"sm_handicapped.png"];
         }
         
         // if this cabin element is a seat and the seat has a seatnumber than add it to cabin view
@@ -292,17 +296,6 @@
     UIColor* explanationCabinColor = [UIColor colorWithRed:100.0f/255.0f green:100.0f/255.0f blue:100.0f/255.0f alpha:0.1f];
     [explanationView setBackgroundColor: explanationCabinColor];
     
-    NSMutableDictionary* imagesAndDescription = [[NSMutableDictionary alloc] init];
-    [imagesAndDescription setObject:@"Unknown" forKey:@"sm_unknown_parameter.png"];
-    [imagesAndDescription setObject:@"BR Blocked" forKey:@"sm_br_blocked.png"];
-    [imagesAndDescription setObject:@"Available" forKey:@"sm_available.png"];
-    [imagesAndDescription setObject:@"Checked In" forKey:@"sm_checked_in.png"];
-    [imagesAndDescription setObject:@"Exit" forKey:@"sm_exit_begin.png"];
-    [imagesAndDescription setObject:@"Handicapped" forKey:@"sm_handicapped.png"];
-    [imagesAndDescription setObject:@"Least Preferable" forKey:@"sm_least_preferable.png"];
-    [imagesAndDescription setObject:@"Unusable" forKey:@"sm_unusable.png"];
-    [imagesAndDescription setObject:@"Wing" forKey:@"sm_wing.png"];
-    
     NSEnumerator* keys = [imagesAndDescription keyEnumerator];
     NSString* imageFileName;
     UIImage* image;
@@ -311,6 +304,9 @@
     int y=0;
     while((imageFileName = [keys nextObject])){
         image = [UIImage imageNamed:imageFileName];
+        if(image.size.width <= 0 || image.size.height<=0){
+            image = [UIImage imageNamed:@"sm_unknown_parameter.png"];
+        }
         imageView = [[UIImageView alloc] initWithImage:image];
         imageView.frame = CGRectMake(x*(unitWidth) + (x*unitWidth*2), y*unitHeight, unitWidth, unitHeight);
         [explanationView addSubview: imageView];
