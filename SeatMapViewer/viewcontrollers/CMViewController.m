@@ -28,7 +28,7 @@
     
     
     
-    NSArray* selectedElements = [[NSMutableArray alloc] initWithObjects: @"se2,1,6", @"em1,0,5", @"gl1,1,0", nil];
+    NSArray* selectedElements = [[NSMutableArray alloc] initWithObjects: @"se2,1,6",/*, @"em1,0,5", @"gl1,1,0", */nil];
     
     
     // This is it!
@@ -58,4 +58,5 @@
     UIElement* uie = uiElement;
     NSLog(@"UIElement: %@(%@,%@) %@ %@", uie.viewName, uie.element.x, uie.element.y, uie.abb, uie.desc);
 }
+
 @end

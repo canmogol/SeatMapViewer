@@ -12,6 +12,9 @@
 
 @interface UIElement : UIButton
 
++ (UIElement*) selected;
++ (void) setSelected:(UIElement*)val;
+
 @property (nonatomic, retain) CMElement* element;
 @property (nonatomic, retain) NSString* viewName;
 @property (nonatomic, retain) NSString* abb;

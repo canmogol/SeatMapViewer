@@ -104,6 +104,7 @@
         if([selectedElements containsObject:selectedCheck]){
             uie.layer.borderColor = [UIColor redColor].CGColor;
             uie.layer.borderWidth = 2.0f;
+            [UIElement setSelected:uie];
         }
         
         // set default properties; text, background, border etc.
