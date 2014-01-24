@@ -22,15 +22,6 @@
 		C247B6FD186D71D0000872B6 /* SeatMapViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B6FC186D71D0000872B6 /* SeatMapViewerTests.m */; };
 		C247B77E186DAEAC000872B6 /* CMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B77D186DAEAC000872B6 /* CMViewController.m */; };
 		C247B7AA186DAF28000872B6 /* XmlToSeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B782186DAF28000872B6 /* XmlToSeatMap.m */; };
-		C247B7AB186DAF28000872B6 /* sm_available.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B785186DAF28000872B6 /* sm_available.png */; };
-		C247B7AC186DAF28000872B6 /* sm_checked_in.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B786186DAF28000872B6 /* sm_checked_in.png */; };
-		C247B7AD186DAF28000872B6 /* sm_exit_begin.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B787186DAF28000872B6 /* sm_exit_begin.png */; };
-		C247B7AE186DAF28000872B6 /* sm_exit_end.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B788186DAF28000872B6 /* sm_exit_end.png */; };
-		C247B7AF186DAF28000872B6 /* sm_handicapped.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B789186DAF28000872B6 /* sm_handicapped.png */; };
-		C247B7B0186DAF28000872B6 /* sm_least_preferable.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B78A186DAF28000872B6 /* sm_least_preferable.png */; };
-		C247B7B1186DAF28000872B6 /* sm_unit.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B78B186DAF28000872B6 /* sm_unit.png */; };
-		C247B7B2186DAF28000872B6 /* sm_unusable.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B78C186DAF28000872B6 /* sm_unusable.png */; };
-		C247B7B3186DAF28000872B6 /* sm_wing.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B78D186DAF28000872B6 /* sm_wing.png */; };
 		C247B7B4186DAF28000872B6 /* CMPlaneMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B790186DAF28000872B6 /* CMPlaneMap.m */; };
 		C247B7B5186DAF28000872B6 /* AftCabinMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B794186DAF28000872B6 /* AftCabinMap.m */; };
 		C247B7B6186DAF28000872B6 /* CabinElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B797186DAF28000872B6 /* CabinElement.m */; };
@@ -39,11 +30,38 @@
 		C247B7B9186DAF28000872B6 /* Seat.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B7A1186DAF28000872B6 /* Seat.m */; };
 		C247B7BA186DAF28000872B6 /* SeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B7A4186DAF28000872B6 /* SeatMap.m */; };
 		C247B7BB186DAF28000872B6 /* SeatMapRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B7A7186DAF28000872B6 /* SeatMapRow.m */; };
-		C247B7BC186DAF28000872B6 /* seatMap.xml in Resources */ = {isa = PBXBuildFile; fileRef = C247B7A9186DAF28000872B6 /* seatMap.xml */; };
+		C247B7BC186DAF28000872B6 /* SeatMapEconomy.xml in Resources */ = {isa = PBXBuildFile; fileRef = C247B7A9186DAF28000872B6 /* SeatMapEconomy.xml */; };
 		C247B7C3186DD9D6000872B6 /* UICabinView.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B7C2186DD9D6000872B6 /* UICabinView.m */; };
-		C247B7C5186F0A04000872B6 /* sm_br_blocked.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B7C4186F0A04000872B6 /* sm_br_blocked.png */; };
-		C247B7C7186F0A0B000872B6 /* sm_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B7C6186F0A0B000872B6 /* sm_blank.png */; };
-		C247B7C9186F0B1C000872B6 /* sm_unknown_parameter.png in Resources */ = {isa = PBXBuildFile; fileRef = C247B7C8186F0B1C000872B6 /* sm_unknown_parameter.png */; };
+		C2A6CD9D188D69B500BED025 /* SeatMapBusiness.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CD9C188D69B500BED025 /* SeatMapBusiness.xml */; };
+		C2A6CD9F18915D7C00BED025 /* view-gl1.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CD9E18915D7C00BED025 /* view-gl1.xml */; };
+		C2A6CDA118915DE100BED025 /* view-cabin.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDA018915DE100BED025 /* view-cabin.xml */; };
+		C2A6CDA318915E4800BED025 /* view-video-center.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDA218915E4800BED025 /* view-video-center.xml */; };
+		C2A6CDA618915F0900BED025 /* view-crew-rest.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDA418915F0900BED025 /* view-crew-rest.xml */; };
+		C2A6CDA718915F0900BED025 /* view-emergency.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDA518915F0900BED025 /* view-emergency.xml */; };
+		C2A6CDA9189160AF00BED025 /* view-seats.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDA8189160AF00BED025 /* view-seats.xml */; };
+		C2A6CDAB18916F5D00BED025 /* plane.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDAA18916F5D00BED025 /* plane.xml */; };
+		C2A6CDAE18919D3800BED025 /* CMXmlToView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A6CDAD18919D3800BED025 /* CMXmlToView.m */; };
+		C2A6CDB118919E1B00BED025 /* CMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A6CDB018919E1B00BED025 /* CMElement.m */; };
+		C2A6CDB41891A12900BED025 /* CMView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A6CDB31891A12900BED025 /* CMView.m */; };
+		C2A6CDB71891B22800BED025 /* UIElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A6CDB61891B22800BED025 /* UIElement.m */; };
+		C2A6CDF01891DB8300BED025 /* cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDDE1891DB8300BED025 /* cabin.png */; };
+		C2A6CDF11891DB8300BED025 /* crew_rest.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDDF1891DB8300BED025 /* crew_rest.png */; };
+		C2A6CDF21891DB8300BED025 /* emergency_ditching.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE01891DB8300BED025 /* emergency_ditching.png */; };
+		C2A6CDF31891DB8300BED025 /* emergency_exit.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE11891DB8300BED025 /* emergency_exit.png */; };
+		C2A6CDF41891DB8300BED025 /* emergency_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE21891DB8300BED025 /* emergency_fire.png */; };
+		C2A6CDF51891DB8300BED025 /* emergency_first_aid.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE31891DB8300BED025 /* emergency_first_aid.png */; };
+		C2A6CDF61891DB8300BED025 /* emergency_lighting_sign.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE41891DB8300BED025 /* emergency_lighting_sign.png */; };
+		C2A6CDF71891DB8300BED025 /* emergency_miscellaneous.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE51891DB8300BED025 /* emergency_miscellaneous.png */; };
+		C2A6CDF81891DB8300BED025 /* galley.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE61891DB8300BED025 /* galley.png */; };
+		C2A6CDF91891DB8300BED025 /* lavatory.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE71891DB8300BED025 /* lavatory.png */; };
+		C2A6CDFA1891DB8300BED025 /* sb-seat.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE81891DB8300BED025 /* sb-seat.png */; };
+		C2A6CDFB1891DB8300BED025 /* se-seat.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE91891DB8300BED025 /* se-seat.png */; };
+		C2A6CDFC1891DB8300BED025 /* sm_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDEA1891DB8300BED025 /* sm_blank.png */; };
+		C2A6CDFD1891DB8300BED025 /* exit_north.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDEB1891DB8300BED025 /* exit_north.png */; };
+		C2A6CDFE1891DB8300BED025 /* exit_south.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDEC1891DB8300BED025 /* exit_south.png */; };
+		C2A6CDFF1891DB8300BED025 /* sm_handicapped.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDED1891DB8300BED025 /* sm_handicapped.png */; };
+		C2A6CE001891DB8300BED025 /* sm_wing.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDEE1891DB8300BED025 /* sm_wing.png */; };
+		C2A6CE011891DB8300BED025 /* video_center.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDEF1891DB8300BED025 /* video_center.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,15 +96,6 @@
 		C247B77D186DAEAC000872B6 /* CMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMViewController.m; sourceTree = "<group>"; };
 		C247B781186DAF28000872B6 /* XmlToSeatMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlToSeatMap.h; sourceTree = "<group>"; };
 		C247B782186DAF28000872B6 /* XmlToSeatMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlToSeatMap.m; sourceTree = "<group>"; };
-		C247B785186DAF28000872B6 /* sm_available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_available.png; sourceTree = "<group>"; };
-		C247B786186DAF28000872B6 /* sm_checked_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_checked_in.png; sourceTree = "<group>"; };
-		C247B787186DAF28000872B6 /* sm_exit_begin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_exit_begin.png; sourceTree = "<group>"; };
-		C247B788186DAF28000872B6 /* sm_exit_end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_exit_end.png; sourceTree = "<group>"; };
-		C247B789186DAF28000872B6 /* sm_handicapped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_handicapped.png; sourceTree = "<group>"; };
-		C247B78A186DAF28000872B6 /* sm_least_preferable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_least_preferable.png; sourceTree = "<group>"; };
-		C247B78B186DAF28000872B6 /* sm_unit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_unit.png; sourceTree = "<group>"; };
-		C247B78C186DAF28000872B6 /* sm_unusable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_unusable.png; sourceTree = "<group>"; };
-		C247B78D186DAF28000872B6 /* sm_wing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_wing.png; sourceTree = "<group>"; };
 		C247B78F186DAF28000872B6 /* CMPlaneMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPlaneMap.h; sourceTree = "<group>"; };
 		C247B790186DAF28000872B6 /* CMPlaneMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPlaneMap.m; sourceTree = "<group>"; };
 		C247B793186DAF28000872B6 /* AftCabinMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftCabinMap.h; sourceTree = "<group>"; };
@@ -104,13 +113,44 @@
 		C247B7A4186DAF28000872B6 /* SeatMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeatMap.m; sourceTree = "<group>"; };
 		C247B7A6186DAF28000872B6 /* SeatMapRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeatMapRow.h; sourceTree = "<group>"; };
 		C247B7A7186DAF28000872B6 /* SeatMapRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeatMapRow.m; sourceTree = "<group>"; };
-		C247B7A9186DAF28000872B6 /* seatMap.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = seatMap.xml; sourceTree = "<group>"; };
+		C247B7A9186DAF28000872B6 /* SeatMapEconomy.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SeatMapEconomy.xml; sourceTree = "<group>"; };
 		C247B7C1186DD9D6000872B6 /* UICabinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICabinView.h; sourceTree = "<group>"; };
 		C247B7C2186DD9D6000872B6 /* UICabinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICabinView.m; sourceTree = "<group>"; };
-		C247B7C4186F0A04000872B6 /* sm_br_blocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_br_blocked.png; sourceTree = "<group>"; };
-		C247B7C6186F0A0B000872B6 /* sm_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_blank.png; sourceTree = "<group>"; };
-		C247B7C8186F0B1C000872B6 /* sm_unknown_parameter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_unknown_parameter.png; sourceTree = "<group>"; };
 		C247B7CD186F1E52000872B6 /* CMPlaneMapDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPlaneMapDelegate.h; sourceTree = "<group>"; };
+		C2A6CD9C188D69B500BED025 /* SeatMapBusiness.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SeatMapBusiness.xml; sourceTree = "<group>"; };
+		C2A6CD9E18915D7C00BED025 /* view-gl1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-gl1.xml"; sourceTree = "<group>"; };
+		C2A6CDA018915DE100BED025 /* view-cabin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-cabin.xml"; sourceTree = "<group>"; };
+		C2A6CDA218915E4800BED025 /* view-video-center.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-video-center.xml"; sourceTree = "<group>"; };
+		C2A6CDA418915F0900BED025 /* view-crew-rest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-crew-rest.xml"; sourceTree = "<group>"; };
+		C2A6CDA518915F0900BED025 /* view-emergency.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-emergency.xml"; sourceTree = "<group>"; };
+		C2A6CDA8189160AF00BED025 /* view-seats.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-seats.xml"; sourceTree = "<group>"; };
+		C2A6CDAA18916F5D00BED025 /* plane.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plane.xml; sourceTree = "<group>"; };
+		C2A6CDAC18919D3800BED025 /* CMXmlToView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMXmlToView.h; sourceTree = "<group>"; };
+		C2A6CDAD18919D3800BED025 /* CMXmlToView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMXmlToView.m; sourceTree = "<group>"; };
+		C2A6CDAF18919E1B00BED025 /* CMElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMElement.h; path = Element/CMElement.h; sourceTree = "<group>"; };
+		C2A6CDB018919E1B00BED025 /* CMElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMElement.m; path = Element/CMElement.m; sourceTree = "<group>"; };
+		C2A6CDB21891A12900BED025 /* CMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMView.h; path = CMView/CMView.h; sourceTree = "<group>"; };
+		C2A6CDB31891A12900BED025 /* CMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMView.m; path = CMView/CMView.m; sourceTree = "<group>"; };
+		C2A6CDB51891B22800BED025 /* UIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIElement.h; sourceTree = "<group>"; };
+		C2A6CDB61891B22800BED025 /* UIElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIElement.m; sourceTree = "<group>"; };
+		C2A6CDDE1891DB8300BED025 /* cabin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cabin.png; sourceTree = "<group>"; };
+		C2A6CDDF1891DB8300BED025 /* crew_rest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crew_rest.png; sourceTree = "<group>"; };
+		C2A6CDE01891DB8300BED025 /* emergency_ditching.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergency_ditching.png; sourceTree = "<group>"; };
+		C2A6CDE11891DB8300BED025 /* emergency_exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergency_exit.png; sourceTree = "<group>"; };
+		C2A6CDE21891DB8300BED025 /* emergency_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergency_fire.png; sourceTree = "<group>"; };
+		C2A6CDE31891DB8300BED025 /* emergency_first_aid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergency_first_aid.png; sourceTree = "<group>"; };
+		C2A6CDE41891DB8300BED025 /* emergency_lighting_sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergency_lighting_sign.png; sourceTree = "<group>"; };
+		C2A6CDE51891DB8300BED025 /* emergency_miscellaneous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergency_miscellaneous.png; sourceTree = "<group>"; };
+		C2A6CDE61891DB8300BED025 /* galley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galley.png; sourceTree = "<group>"; };
+		C2A6CDE71891DB8300BED025 /* lavatory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lavatory.png; sourceTree = "<group>"; };
+		C2A6CDE81891DB8300BED025 /* sb-seat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sb-seat.png"; sourceTree = "<group>"; };
+		C2A6CDE91891DB8300BED025 /* se-seat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "se-seat.png"; sourceTree = "<group>"; };
+		C2A6CDEA1891DB8300BED025 /* sm_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_blank.png; sourceTree = "<group>"; };
+		C2A6CDEB1891DB8300BED025 /* exit_north.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit_north.png; sourceTree = "<group>"; };
+		C2A6CDEC1891DB8300BED025 /* exit_south.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit_south.png; sourceTree = "<group>"; };
+		C2A6CDED1891DB8300BED025 /* sm_handicapped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_handicapped.png; sourceTree = "<group>"; };
+		C2A6CDEE1891DB8300BED025 /* sm_wing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_wing.png; sourceTree = "<group>"; };
+		C2A6CDEF1891DB8300BED025 /* video_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_center.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +288,8 @@
 			children = (
 				C247B781186DAF28000872B6 /* XmlToSeatMap.h */,
 				C247B782186DAF28000872B6 /* XmlToSeatMap.m */,
+				C2A6CDAC18919D3800BED025 /* CMXmlToView.h */,
+				C2A6CDAD18919D3800BED025 /* CMXmlToView.m */,
 			);
 			path = converters;
 			sourceTree = "<group>";
@@ -263,18 +305,24 @@
 		C247B784186DAF28000872B6 /* smimages */ = {
 			isa = PBXGroup;
 			children = (
-				C247B7C8186F0B1C000872B6 /* sm_unknown_parameter.png */,
-				C247B7C6186F0A0B000872B6 /* sm_blank.png */,
-				C247B7C4186F0A04000872B6 /* sm_br_blocked.png */,
-				C247B785186DAF28000872B6 /* sm_available.png */,
-				C247B786186DAF28000872B6 /* sm_checked_in.png */,
-				C247B787186DAF28000872B6 /* sm_exit_begin.png */,
-				C247B788186DAF28000872B6 /* sm_exit_end.png */,
-				C247B789186DAF28000872B6 /* sm_handicapped.png */,
-				C247B78A186DAF28000872B6 /* sm_least_preferable.png */,
-				C247B78B186DAF28000872B6 /* sm_unit.png */,
-				C247B78C186DAF28000872B6 /* sm_unusable.png */,
-				C247B78D186DAF28000872B6 /* sm_wing.png */,
+				C2A6CDDE1891DB8300BED025 /* cabin.png */,
+				C2A6CDDF1891DB8300BED025 /* crew_rest.png */,
+				C2A6CDE01891DB8300BED025 /* emergency_ditching.png */,
+				C2A6CDE11891DB8300BED025 /* emergency_exit.png */,
+				C2A6CDE21891DB8300BED025 /* emergency_fire.png */,
+				C2A6CDE31891DB8300BED025 /* emergency_first_aid.png */,
+				C2A6CDE41891DB8300BED025 /* emergency_lighting_sign.png */,
+				C2A6CDE51891DB8300BED025 /* emergency_miscellaneous.png */,
+				C2A6CDE61891DB8300BED025 /* galley.png */,
+				C2A6CDE71891DB8300BED025 /* lavatory.png */,
+				C2A6CDE81891DB8300BED025 /* sb-seat.png */,
+				C2A6CDE91891DB8300BED025 /* se-seat.png */,
+				C2A6CDEA1891DB8300BED025 /* sm_blank.png */,
+				C2A6CDEB1891DB8300BED025 /* exit_north.png */,
+				C2A6CDEC1891DB8300BED025 /* exit_south.png */,
+				C2A6CDED1891DB8300BED025 /* sm_handicapped.png */,
+				C2A6CDEE1891DB8300BED025 /* sm_wing.png */,
+				C2A6CDEF1891DB8300BED025 /* video_center.png */,
 			);
 			path = smimages;
 			sourceTree = "<group>";
@@ -299,6 +347,10 @@
 				C247B79F186DAF28000872B6 /* Seat */,
 				C247B7A2186DAF28000872B6 /* SeatMap */,
 				C247B7A5186DAF28000872B6 /* SeatMapRow */,
+				C2A6CDAF18919E1B00BED025 /* CMElement.h */,
+				C2A6CDB018919E1B00BED025 /* CMElement.m */,
+				C2A6CDB21891A12900BED025 /* CMView.h */,
+				C2A6CDB31891A12900BED025 /* CMView.m */,
 			);
 			path = nodes;
 			sourceTree = "<group>";
@@ -369,7 +421,15 @@
 		C247B7A8186DAF28000872B6 /* samplexmls */ = {
 			isa = PBXGroup;
 			children = (
-				C247B7A9186DAF28000872B6 /* seatMap.xml */,
+				C2A6CDA8189160AF00BED025 /* view-seats.xml */,
+				C2A6CDA418915F0900BED025 /* view-crew-rest.xml */,
+				C2A6CDA518915F0900BED025 /* view-emergency.xml */,
+				C2A6CDA218915E4800BED025 /* view-video-center.xml */,
+				C2A6CDA018915DE100BED025 /* view-cabin.xml */,
+				C2A6CD9C188D69B500BED025 /* SeatMapBusiness.xml */,
+				C247B7A9186DAF28000872B6 /* SeatMapEconomy.xml */,
+				C2A6CD9E18915D7C00BED025 /* view-gl1.xml */,
+				C2A6CDAA18916F5D00BED025 /* plane.xml */,
 			);
 			path = samplexmls;
 			sourceTree = "<group>";
@@ -380,6 +440,8 @@
 				C247B7C1186DD9D6000872B6 /* UICabinView.h */,
 				C247B7C2186DD9D6000872B6 /* UICabinView.m */,
 				C247B7CD186F1E52000872B6 /* CMPlaneMapDelegate.h */,
+				C2A6CDB51891B22800BED025 /* UIElement.h */,
+				C2A6CDB61891B22800BED025 /* UIElement.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -461,22 +523,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A6CDFB1891DB8300BED025 /* se-seat.png in Resources */,
+				C2A6CDA718915F0900BED025 /* view-emergency.xml in Resources */,
 				C247B6EA186D71D0000872B6 /* Images.xcassets in Resources */,
+				C2A6CD9D188D69B500BED025 /* SeatMapBusiness.xml in Resources */,
 				C247B6DC186D71D0000872B6 /* InfoPlist.strings in Resources */,
-				C247B7B0186DAF28000872B6 /* sm_least_preferable.png in Resources */,
-				C247B7AC186DAF28000872B6 /* sm_checked_in.png in Resources */,
-				C247B7AE186DAF28000872B6 /* sm_exit_end.png in Resources */,
-				C247B7B1186DAF28000872B6 /* sm_unit.png in Resources */,
-				C247B7C5186F0A04000872B6 /* sm_br_blocked.png in Resources */,
-				C247B7B2186DAF28000872B6 /* sm_unusable.png in Resources */,
+				C2A6CDAB18916F5D00BED025 /* plane.xml in Resources */,
+				C2A6CDF21891DB8300BED025 /* emergency_ditching.png in Resources */,
+				C2A6CDF81891DB8300BED025 /* galley.png in Resources */,
+				C2A6CDF91891DB8300BED025 /* lavatory.png in Resources */,
+				C2A6CDFF1891DB8300BED025 /* sm_handicapped.png in Resources */,
+				C2A6CDF61891DB8300BED025 /* emergency_lighting_sign.png in Resources */,
+				C2A6CDA9189160AF00BED025 /* view-seats.xml in Resources */,
+				C2A6CE011891DB8300BED025 /* video_center.png in Resources */,
+				C2A6CDFE1891DB8300BED025 /* exit_south.png in Resources */,
+				C2A6CDF71891DB8300BED025 /* emergency_miscellaneous.png in Resources */,
 				C247B6E5186D71D0000872B6 /* Main.storyboard in Resources */,
-				C247B7AF186DAF28000872B6 /* sm_handicapped.png in Resources */,
-				C247B7C9186F0B1C000872B6 /* sm_unknown_parameter.png in Resources */,
-				C247B7AB186DAF28000872B6 /* sm_available.png in Resources */,
-				C247B7C7186F0A0B000872B6 /* sm_blank.png in Resources */,
-				C247B7BC186DAF28000872B6 /* seatMap.xml in Resources */,
-				C247B7B3186DAF28000872B6 /* sm_wing.png in Resources */,
-				C247B7AD186DAF28000872B6 /* sm_exit_begin.png in Resources */,
+				C2A6CDFD1891DB8300BED025 /* exit_north.png in Resources */,
+				C247B7BC186DAF28000872B6 /* SeatMapEconomy.xml in Resources */,
+				C2A6CD9F18915D7C00BED025 /* view-gl1.xml in Resources */,
+				C2A6CDFA1891DB8300BED025 /* sb-seat.png in Resources */,
+				C2A6CE001891DB8300BED025 /* sm_wing.png in Resources */,
+				C2A6CDFC1891DB8300BED025 /* sm_blank.png in Resources */,
+				C2A6CDF01891DB8300BED025 /* cabin.png in Resources */,
+				C2A6CDF11891DB8300BED025 /* crew_rest.png in Resources */,
+				C2A6CDA118915DE100BED025 /* view-cabin.xml in Resources */,
+				C2A6CDF31891DB8300BED025 /* emergency_exit.png in Resources */,
+				C2A6CDF41891DB8300BED025 /* emergency_fire.png in Resources */,
+				C2A6CDA618915F0900BED025 /* view-crew-rest.xml in Resources */,
+				C2A6CDA318915E4800BED025 /* view-video-center.xml in Resources */,
+				C2A6CDF51891DB8300BED025 /* emergency_first_aid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,17 +572,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C247B7B9186DAF28000872B6 /* Seat.m in Sources */,
+				C2A6CDB118919E1B00BED025 /* CMElement.m in Sources */,
 				C247B7B4186DAF28000872B6 /* CMPlaneMap.m in Sources */,
 				C247B7AA186DAF28000872B6 /* XmlToSeatMap.m in Sources */,
 				C247B7B5186DAF28000872B6 /* AftCabinMap.m in Sources */,
 				C247B77E186DAEAC000872B6 /* CMViewController.m in Sources */,
+				C2A6CDAE18919D3800BED025 /* CMXmlToView.m in Sources */,
 				C247B7B7186DAF28000872B6 /* ForwardCabinMap.m in Sources */,
 				C247B7B8186DAF28000872B6 /* Properties.m in Sources */,
+				C2A6CDB71891B22800BED025 /* UIElement.m in Sources */,
 				C247B6E2186D71D0000872B6 /* CMAppDelegate.m in Sources */,
 				C247B7B6186DAF28000872B6 /* CabinElement.m in Sources */,
 				C247B7BA186DAF28000872B6 /* SeatMap.m in Sources */,
 				C247B7BB186DAF28000872B6 /* SeatMapRow.m in Sources */,
 				C247B7C3186DD9D6000872B6 /* UICabinView.m in Sources */,
+				C2A6CDB41891A12900BED025 /* CMView.m in Sources */,
 				C247B6DE186D71D0000872B6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

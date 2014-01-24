@@ -39,7 +39,7 @@
         currentElement = nil;
         parentObject = nil;
         currentObject = nil;
-        return seatMap;
+        return (SeatMap*)seatMap;
     }
 }
 

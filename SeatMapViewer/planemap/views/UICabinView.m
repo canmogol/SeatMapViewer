@@ -12,7 +12,6 @@
 @synthesize cabinElement, planeMapDelegate;
 
 -(void)onTouch{
-    [planeMapDelegate cabinElementTouched: cabinElement];
 }
 
 

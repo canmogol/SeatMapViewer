@@ -10,7 +10,7 @@
 
 @implementation CMPlaneMap
 
-@synthesize unitWidth, unitHeight, scaleFactor, planeMapDelegate, imagesAndDescription;
+@synthesize unitWidth, unitHeight, scaleFactor, planeMapDelegate, imagesAndDescription, selectedElements;
 
 - (id)initWithScaleFactor:(float)scale
 {
@@ -24,7 +24,185 @@
     return self;
 }
 
-+(UIView*)planeMapFromXmlData:(NSData*) content withPlaneMapDelegate:(id)planeMapDelegate withScaleFactor:(float)scale{
+
++(UIView*)planeMapFromXmlData:(NSData*) content withPlaneMapDelegate:(id)planeMapDelegate withScaleFactor:(float)scale withSelectedElements:(NSArray*) selectedElements{
+    CMPlaneMap* cmp = [[CMPlaneMap alloc] initWithScaleFactor:scale];
+    [cmp setPlaneMapDelegate:planeMapDelegate];
+    [cmp setSelectedElements:selectedElements];
+    
+    // create a plane map view
+    UIView* planeMapView = [[UIView alloc] init];
+    [planeMapView setBackgroundColor:[UIColor grayColor]];
+    [planeMapView setBackgroundColor:[UIColor whiteColor]];
+    planeMapView.layer.borderColor = [UIColor blackColor].CGColor;
+    planeMapView.layer.borderWidth = 1.0f;
+    
+    // parse the xml to an array of CMView objects
+    CMXmlToView* xmlToView = [[CMXmlToView alloc] init];
+    NSMutableArray* views = [xmlToView parseXml:content];
+    NSMutableArray* attachedViews = [[NSMutableArray alloc] init];
+    
+    
+    for(CMView* v in views){
+        // if the view is attached to the bottom of the plane map, add them later
+        if([[v attached]isEqualToString:@"true"]){
+            [attachedViews addObject:v];
+        }else{
+            // for each CMView object, create a UIView
+            UIView* view = [cmp createUIView: v];
+            view.frame = CGRectMake(planeMapView.frame.size.width, 0, view.frame.size.width, view.frame.size.height);
+            
+            // set the width and height of the plane map view
+            float width = planeMapView.frame.size.width + view.frame.size.width;
+            float height = MAX(view.frame.origin.y+view.frame.size.height, planeMapView.frame.size.height);
+            planeMapView.frame = CGRectMake(0, 0, width, height);
+            
+            // add eachview to planeMapView
+            [planeMapView addSubview:view];
+        }
+    }
+    
+    for(CMView* v in attachedViews){
+        // for each CMView object, create a UIView
+        UIView* view = [cmp createUIView: v];
+        view.frame = CGRectMake(0, planeMapView.frame.size.height, view.frame.size.width, view.frame.size.height);
+        
+        // set the width and height of the plane map view
+        float width = MAX(view.frame.origin.x+view.frame.size.width, planeMapView.frame.size.width);
+        float height = planeMapView.frame.size.height + view.frame.size.height;
+        planeMapView.frame = CGRectMake(0, 0, width, height);
+        
+        // add eachview to planeMapView
+        [planeMapView addSubview:view];
+    }
+    
+    
+    // return plane map view
+    return planeMapView;
+}
+
+-(UIView*) createUIView:(CMView*)cmv{
+    UIView* uiv = [[UIView alloc] init];
+
+    for(CMElement* el in [cmv elements]){
+        // create a UIElement and set values from CMView
+        UIElement* uie = [[UIElement alloc] init];
+        [uie addTarget:nil action:@selector(onTouch) forControlEvents:UIControlEventTouchUpInside];
+        float x = [[el x] intValue] * unitWidth;
+        float y = [[el y] intValue] * unitHeight;
+        uie.frame = CGRectMake(x, y, unitWidth, unitHeight);
+        if(![[el disabled] isEqualToString:@"true"]){
+            [uie setPlaneMapDelegate: planeMapDelegate];
+        }
+        [uie setViewName: [cmv name]];
+        [uie setElement:el];
+        [uie setAbb:[el abb]];
+        [uie setDesc:[el desc]];
+        
+        // check if this element is selected
+        NSString* selectedCheck = [[NSString alloc] initWithFormat:@"%@,%@,%@", [cmv name], [el x], [el y]];
+        if([selectedElements containsObject:selectedCheck]){
+            uie.layer.borderColor = [UIColor redColor].CGColor;
+            uie.layer.borderWidth = 2.0f;
+        }
+        
+        // set default properties; text, background, border etc.
+        if([[el properties] objectForKey:@"text"]){
+            [uie addSubview:[self createLabel: [[el properties] objectForKey:@"text"]]];
+
+        }else if([[el properties] objectForKey:@"background-color"]){
+            [uie setBackgroundColor:[self colorFromHexString: [[el properties] objectForKey:@"background-color"]]];
+
+        }else if([[el properties] objectForKey:@"border-color"]){
+            uie.layer.borderColor = [self colorFromHexString: [[el properties] objectForKey:@"border-color"]].CGColor;
+            
+        }else if([[el properties] objectForKey:@"border-width"]){
+            uie.layer.borderWidth = [[[el properties] objectForKey:@"border-width"] floatValue];
+            
+        }else if([[el properties] objectForKey:@"background-image"]){
+            [uie addSubview: [self createImageView: [[el properties] objectForKey:@"background-image"]]];
+        }
+        
+        
+        // if CMElement is a seat then there are special images, otherwise there are images corresponding to their types
+        if([[el type] isEqualToString:@"seats"]){
+            // add the seat abb specific image
+            NSString* imageName = [[NSString alloc] initWithFormat:@"%@-seat.png",[[el abb] lowercaseString]];
+            [uie addSubview: [self createImageView: imageName]];
+            
+            // add the seat number
+            [uie addSubview:[self createLabel: [[el properties] objectForKey:@"SeatNumber"]]];
+            
+        }else{
+            // create image from type
+            NSString* imageName = [[NSString alloc] initWithFormat:@"%@.png",[el type]];
+            [uie addSubview: [self createImageView: imageName]];
+        }
+        // set the size dynamically for uiv
+        float width = MAX(uie.frame.origin.x+uie.frame.size.width, uiv.frame.size.width);
+        float height = MAX(uie.frame.origin.y+uie.frame.size.height, uiv.frame.size.height);
+        uiv.frame = CGRectMake(0, 0, width, height);
+        
+        // add this uie to uiv
+        [uiv addSubview:uie];
+    }
+    return uiv;
+}
+
+- (UIColor *)colorFromHexString:(NSString *)hexString {
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner setScanLocation:0];
+    [scanner scanHexInt:&rgbValue];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
+
+- (UIImageView*) createImageView: (NSString*) imageName{
+    // create image from image file name
+    UIImage* image = [UIImage imageNamed: imageName];
+    // scale image if necessary
+    if(image.size.width!=unitWidth || image.size.height!=unitHeight){
+        image = [self resizeWithUnit:image];
+    }
+    return [[UIImageView alloc] initWithImage:image];
+}
+
+-(UILabel*) createLabel: (NSString*) text{
+    UILabel* textLabel = [[UILabel alloc] init];
+    textLabel.frame = CGRectMake(unitWidth/3, 0, unitWidth, unitHeight);
+    [textLabel setText:text];
+    textLabel.font = [UIFont systemFontOfSize:18*scaleFactor];
+    return textLabel;
+}
+
+-(UIImage*)resizeWithUnit:(UIImage*)image{
+    CGSize scaledSize = CGSizeMake(unitWidth, unitHeight);
+    UIGraphicsBeginImageContextWithOptions( scaledSize, NO, 0.0 );
+    CGRect scaledImageRect = CGRectMake( 0.0, 0.0, scaledSize.width, scaledSize.height );
+    [image drawInRect:scaledImageRect];
+    image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+
+
+
+/*
+-(UIView*) createSeatMapViewWithContent: (NSData*) contentData{
+    SeatMap* seatMap = [self xmlDataToSeatMap:contentData];
+    return [self seatMapToView: seatMap];
+}
+
+-(void) addUIView: (UIView* )uiView toPlaneMapView:(UIView*)planeMapView{
+    uiView.frame = CGRectMake(planeMapView.frame.size.width, 0, uiView.frame.size.width, uiView.frame.size.height);
+    [planeMapView addSubview:uiView];
+    planeMapView.frame = CGRectMake(0, 0, planeMapView.frame.size.width + uiView.frame.size.width, MAX(uiView.frame.size.height, planeMapView.frame.size.height));
+    
+}
+
+
++(UIView*)planeMapFromXmlData2:(NSData*) content withPlaneMapDelegate:(id)planeMapDelegate withScaleFactor:(float)scale{
     CMPlaneMap* cmp = [[CMPlaneMap alloc] initWithScaleFactor:scale];
     [cmp setPlaneMapDelegate:planeMapDelegate];
     
@@ -55,7 +233,7 @@
     seatMapView.frame = CGRectMake(aftCabinMapView.frame.size.width, 0, seatMapView.frame.size.width+6, seatMapView.frame.size.height);
     forwardCabinMapView.frame = CGRectMake((aftCabinMapView.frame.size.width+seatMapView.frame.size.width), 0, [cmp unitWidth]*5, seatMapView.frame.size.height);
     explanationView.frame = CGRectMake(
-                                       ((aftCabinMapView.frame.size.width+seatMapView.frame.size.width+forwardCabinMapView.frame.size.width)/2)/*width of the plane map*/
+                                       ((aftCabinMapView.frame.size.width+seatMapView.frame.size.width+forwardCabinMapView.frame.size.width)/2)//width of the plane map
                                        - (explanationView.frame.size.width/2)
                                        ,
                                        seatMapView.frame.size.height,
@@ -111,11 +289,6 @@
         return seatMapView;
     }
     
-    /*
-     seats  corridors
-     <6     1
-     >6     2
-     */
     int numberOfCorridors = 1;
     int corridors[2] = { ceil([[seatMap columnKeys] count]/2) , -1};
     if([[seatMap columnKeys] count]>6){
@@ -329,7 +502,70 @@
     
     return explanationView;
 }
-
+ */
+/*
+ CDRM subtype codes
+ -------------------
+ galley
+ lavatory
+ cabin
+ video_center
+ crew_rest
+ seats
+ emergency_first_aid
+ emergency_ditching
+ emergency_exit
+ emergency_fire
+ emergency_lighting_sign
+ emergency_miscellaneous
+ 
+ 
+ <view>
+ <element x="0" y="1" abb="G1" desc="GALLEY F-3" type="galley"/>
+ <element x="1" y="0" abb="G1" desc="GALLEY F-1" type="galley"/>
+ <element x="2" y="3" abb="LA" desc="Lavatory 1A-1C" type="lavatory"/>
+ </view>
+ 
+ 
+ view-cabin
+ CA	F/C ZONE
+ CB	B/C ZONE
+ CC	FRONT E/C ZONE
+ CD	REAR E/C ZONE
+ CW	WHOLE CABIN
+ S1	FR STAIR HOUSE
+ S2	RR STAIR HOUSE
+ 
+ view-gls (3,10)
+ 0,1 G1  GALLEY F-3                  galley
+ 1,0 G1  GALLEY F-1                  galley
+ 2,3 LA  Lavatory 1A-1C              lavatory
+ view-video_center
+ 0,3 VC  VIDEO CENTER                video_center
+ 0,5 CC	CABIN EQUIPMENT CENTER      video_center
+ *     view-seats-vip
+ view-gls
+ *     view-seats-business
+ 0,0 SF	First Class                 seats
+ 0,1 SF	First Class                 seats
+ view-gls
+ *     view-seats-economy
+ view-gls
+ *     view-seats-economy
+ view-gls
+ view-cabin
+ 0,1 S1	FR STAIR HOUSE              cabin
+ view-crew_rest
+ 2,1 CR	CABIN CREW REST             crew_rest
+ view-emergency
+ 0,1 ZA	FIRST AID                   emergency_first_aid
+ 0,1 ZB	DITCHING                    emergency_ditching
+ 0,1 ZC	EXIT                        emergency_exit
+ 0,1 ZD	FIRE                        emergency_fire
+ 0,1 ZE	LIGHTING SIGN               emergency_lighting_sign
+ 0,1 ZF	MISCELLANEOUS               emergency_miscellaneous
+ 
+ */
 
 
 @end

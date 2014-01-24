@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <element x="0" y="1" abb="CA" desc="F/C ZONE" type="cabin"/>
+    <element x="1" y="1" abb="CC" desc="FRONT E/C ZONE" type="cabin"/>
+</view>

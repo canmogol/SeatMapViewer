@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CabinElement.h"
 
 @protocol CMPlaneMapDelegate <NSObject>
 
 @required
 
--(void)cabinElementTouched:(CabinElement*) cabinElement;
+-(void)elementTouched:(id) uiElement;
 
 @end

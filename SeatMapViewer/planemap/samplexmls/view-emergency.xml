@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <element x="0" y="0" abb="ZA" desc="FIRST AID" type="emergency_first_aid"/>
+    <element x="0" y="1" abb="ZB" desc="DITCHING" type="emergency_ditching"/>
+    <element x="0" y="1" abb="ZC" desc="EXIT" type="emergency_exit"/>
+    <element x="0" y="1" abb="ZD" desc="DITCHING" type="emergency_fire"/>
+    <element x="0" y="1" abb="ZE" desc="LIGHTING SIGN" type="emergency_lighting_sign"/>
+    <element x="0" y="1" abb="ZF" desc="MISCELLANEOUS" type="emergency_miscellaneous"/>
+</view>

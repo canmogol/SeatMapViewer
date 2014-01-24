@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plane>
+<view attached="false" name="gl1" desc="first galleys and lavatories section">
+    <element x="0" y="1" abb="G1" desc="GALLEY F-3" type="galley"/>
+    <element x="1" y="0" abb="G1" desc="GALLEY F-1" type="galley"/>
+    <element x="2" y="3" abb="LA" desc="Lavatory 1A-1C" type="lavatory"/>
+</view>
+<view attached="false" name="vc1" desc="video center">
+    <element x="0" y="3" abb="VC" desc="VIDEO CENTER" type="video_center"/>
+    <element x="0" y="5" abb="CC" desc="CABIN EQUIPMENT CENTER" type="video_center"/>
+</view>
+<view attached="false" name="em1" desc="emergency section">
+    <element x="0" y="0" abb="ZA" desc="FIRST AID" type="emergency_first_aid"/>
+    <element x="0" y="1" abb="ZB" desc="DITCHING" type="emergency_ditching"/>
+    <element x="0" y="2" abb="ZC" desc="EXIT" type="emergency_exit"/>
+    <element x="0" y="3" abb="ZD" desc="DITCHING" type="emergency_fire"/>
+    <element x="0" y="4" abb="ZE" desc="LIGHTING SIGN" type="emergency_lighting_sign"/>
+    <element x="0" y="5" abb="ZF" desc="MISCELLANEOUS" type="emergency_miscellaneous"/>
+</view>
+<view attached="false" name="se1" desc="economy class seats">
+    <element x="0" y="0" abb="seat_row" desc="number of that seat row" type="generic">
+        <property key="text" value="23"/>
+    </element>
+    <element x="0" y="1" abb="wing" desc="this is a wing" type="generic">
+        <property key="background-color" value="00FF00"/>
+        <property key="border-color" value="FFFF00"/>
+        <property key="border-width" value="0.0"/>
+    </element>
+    <element x="0" y="2" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="A"/>
+        <property key="SeatType" value="CHECKED_IN"/>
+        <property key="IsOccupied" value="true"/>
+        <property key="Aisle" value="false"/>
+        <property key="Basinet" value="false"/>
+        <property key="Exit" value="false"/>
+        <property key="ForTransit" value="false"/>
+        <property key="HandyCap" value="true"/>
+    </element>
+    <element x="0" y="3" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="B"/>
+    </element>
+    <element x="0" y="4" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="C"/>
+    </element>
+    <element x="0" y="5" abb="" desc="corridor" type="generic"/>
+    <element x="0" y="6" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="D"/>
+    </element>
+    <element x="0" y="7" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="E"/>
+    </element>
+    <element x="0" y="8" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="F"/>
+    </element>
+    <element x="0" y="9" abb="exit" desc="this is an exit" type="generic">
+        <property key="background-image" value="exit_south.png"/>
+    </element>
+    <element x="0" y="10" abb="seat_row" desc="number of that seat row" type="generic">
+        <property key="text" value="23"/>
+    </element>
+    <element x="1" y="0" abb="seat_row" desc="number of that seat row" type="generic">
+        <property key="text" value="24"/>
+    </element>
+    <element x="1" y="1" abb="wing" desc="this is a wing" type="generic">
+        <property key="background-color" value="00FF00"/>
+        <property key="border-color" value="FFFF00"/>
+        <property key="border-width" value="0.0"/>
+    </element>
+    <element x="1" y="2" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="A"/>
+        <property key="SeatType" value="CHECKED_IN"/>
+        <property key="IsOccupied" value="true"/>
+        <property key="Aisle" value="false"/>
+        <property key="Basinet" value="false"/>
+        <property key="Exit" value="false"/>
+        <property key="ForTransit" value="false"/>
+        <property key="HandyCap" value="true"/>
+    </element>
+    <element x="1" y="3" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="B"/>
+    </element>
+    <element x="1" y="4" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="C"/>
+    </element>
+    <element x="1" y="5" abb="" desc="corridor" type="generic"/>
+    <element x="1" y="6" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="D"/>
+    </element>
+    <element x="1" y="7" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="E"/>
+    </element>
+    <element x="1" y="8" abb="SE" desc="Economy Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="F"/>
+    </element>
+    <element x="1" y="9" abb="exit" desc="this is an exit" type="generic">
+        <property key="background-image" value="exit_south.png"/>
+    </element>
+    <element x="1" y="10" abb="seat_row" desc="number of that seat row" type="generic">
+        <property key="text" value="24"/>
+    </element>
+</view>
+<view attached="false" name="gl2" desc="first galleys and lavatories section">
+    <element x="0" y="2" abb="G2" desc="GALLEY M-2" type="galley"/>
+    <element x="1" y="3" abb="G2" desc="GALLEY M-1" type="galley"/>
+    <element x="0" y="4" abb="LD" desc="Lavatory 2F-2L" type="lavatory"/>
+</view>
+<view attached="false" name="se2" desc="business class seats">
+    <element x="0" y="0" abb="seat_row" desc="number of that seat row" type="generic">
+        <property key="text" value="23"/>
+    </element>
+    <element x="0" y="1" abb="wing" desc="this is a wing" type="generic">
+        <property key="background-color" value="00FF00"/>
+        <property key="border-color" value="FFFF00"/>
+        <property key="border-width" value="0.0"/>
+    </element>
+    <element x="0" y="2" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="A"/>
+        <property key="SeatType" value="CHECKED_IN"/>
+        <property key="IsOccupied" value="true"/>
+        <property key="Aisle" value="false"/>
+        <property key="Basinet" value="false"/>
+        <property key="Exit" value="false"/>
+        <property key="ForTransit" value="false"/>
+        <property key="HandyCap" value="true"/>
+    </element>
+    <element x="0" y="3" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="B"/>
+    </element>
+    <element x="0" y="4" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="C"/>
+    </element>
+    <element x="0" y="5" abb="" desc="corridor" type="generic"/>
+    <element x="0" y="6" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="D"/>
+    </element>
+    <element x="0" y="7" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="E"/>
+    </element>
+    <element x="0" y="8" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="23"/>
+        <property key="SeatRow" value="F"/>
+    </element>
+    <element x="0" y="9" abb="exit" desc="this is an exit" type="generic">
+        <property key="background-image" value="exit_south.png"/>
+    </element>
+    <element x="0" y="10" abb="seat_row" desc="number of that seat row" type="generic">
+        <property key="text" value="23"/>
+    </element>
+    <element x="1" y="0" abb="seat_row" desc="number of that seat row" type="generic">
+        <property key="text" value="24"/>
+    </element>
+    <element x="1" y="1" abb="wing" desc="this is a wing" type="generic">
+        <property key="background-color" value="00FF00"/>
+        <property key="border-color" value="FFFF00"/>
+        <property key="border-width" value="0.0"/>
+    </element>
+    <element x="1" y="2" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="A"/>
+        <property key="SeatType" value="CHECKED_IN"/>
+        <property key="IsOccupied" value="true"/>
+        <property key="Aisle" value="false"/>
+        <property key="Basinet" value="false"/>
+        <property key="Exit" value="false"/>
+        <property key="ForTransit" value="false"/>
+        <property key="HandyCap" value="true"/>
+    </element>
+    <element x="1" y="3" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="B"/>
+    </element>
+    <element x="1" y="4" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="C"/>
+    </element>
+    <element x="1" y="5" abb="" desc="corridor" type="generic"/>
+    <element x="1" y="6" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="D"/>
+    </element>
+    <element x="1" y="7" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="E"/>
+    </element>
+    <element x="1" y="8" abb="SB" desc="Business Class" type="seats">
+        <property key="SeatNumber" value="24"/>
+        <property key="SeatRow" value="F"/>
+    </element>
+    <element x="1" y="9" abb="exit" desc="this is an exit" type="generic">
+        <property key="background-image" value="exit_south.png"/>
+    </element>
+    <element x="1" y="10" abb="seat_row" desc="number of that seat row" type="generic">
+        <property key="text" value="24"/>
+    </element>
+</view>
+<view attached="false" name="ccr1" desc="cabin crew rest area">
+    <element x="0" y="1" abb="CR" desc="CABIN CREW REST" type="crew_rest"/>
+</view>
+<view attached="false" name="gl3" desc="first galleys and lavatories section">
+    <element x="0" y="2" abb="G2" desc="GALLEY M-2" type="galley"/>
+    <element x="1" y="3" abb="G2" desc="GALLEY M-1" type="galley"/>
+    <element x="0" y="4" abb="LD" desc="Lavatory 2F-2L" type="lavatory"/>
+</view>
+<view attached="false" name="gl3" desc="first galleys and lavatories section">
+    <element x="0" y="2" abb="G2" desc="GALLEY M-2" type="galley"/>
+    <element x="1" y="3" abb="G2" desc="GALLEY M-1" type="galley"/>
+    <element x="0" y="4" abb="LD" desc="Lavatory 2F-2L" type="lavatory"/>
+</view>
+<view attached="true" name="cabin1" desc="cabin section below the plane map">
+    <element y="0" x="1" abb="CC" desc="FRONT E/C ZONE" type="cabin"/>
+    <element y="0" x="2" abb="CC" desc="FRONT E/C ZONE" type="cabin"/>
+    
+    <element y="0" x="4" abb="CA" desc="F/C ZONE" type="cabin"/>
+    <element y="0" x="5" abb="CA" desc="F/C ZONE" type="cabin"/>
+    
+    <element y="0" x="7" abb="S2" desc="RR STAIR HOUSE" type="cabin"/>
+    
+    <element y="0" x="9" abb="CB" desc="B/C ZONE" type="cabin"/>
+    <element y="0" x="10" abb="CB" desc="B/C ZONE" type="cabin"/>
+    
+    <element y="0" x="12" abb="S1" desc="FR STAIR HOUSE" type="cabin"/>
+    
+    <element y="0" x="14" abb="CD" desc="REAR E/C ZONE" type="cabin"/>
+    <element y="0" x="15" abb="CD" desc="REAR E/C ZONE" type="cabin"/>
+</view>
+<view attached="true" name="cabin2" desc="cabin section below the plane map">
+    <element y="0" x="4" abb="CW" desc="WHOLE CABIN" type="cabin"/>
+    <element y="0" x="5" abb="CW" desc="WHOLE CABIN" type="cabin"/>
+    <element y="0" x="6" abb="CW" desc="WHOLE CABIN" type="cabin"/>
+    <element y="0" x="7" abb="CB" desc="WHOLE CABIN" type="cabin"/>
+    <element y="0" x="8" abb="CB" desc="WHOLE CABIN" type="cabin"/>
+    <element y="0" x="9" abb="CB" desc="WHOLE CABIN" type="cabin"/>
+    <element y="0" x="10" abb="CB" desc="WHOLE CABIN" type="cabin"/>
+</view>
+<view attached="true" name="lagend" desc="icons and their descriptions">
+    <element y="1" x="4" abb="" desc="" type="generic" disabled="true">
+        <property key="background-image" value="exit_south.png"/>
+    </element>
+    <element y="1" x="5" abb="" desc="" type="generic" disabled="true">
+        <property key="text" value="exit"/>
+    </element>
+</view>
+</plane>

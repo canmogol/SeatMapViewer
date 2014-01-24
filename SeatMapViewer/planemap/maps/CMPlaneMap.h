@@ -10,6 +10,8 @@
 #import "ImportModelsHeader.h"
 #import "UICabinView.h"
 #import "CMPlaneMapDelegate.h"
+#import "CMXmlToView.h"
+#import "UIElement.h"
 
 @interface CMPlaneMap : NSObject 
 
@@ -18,7 +20,8 @@
 @property float scaleFactor;
 @property (weak) id <CMPlaneMapDelegate> planeMapDelegate;
 @property (nonatomic, strong) NSMutableDictionary* imagesAndDescription;
+@property (nonatomic, strong) NSArray* selectedElements;
 
-+(UIView*)planeMapFromXmlData:(NSData*) content withPlaneMapDelegate:(id)planeMapDelegate withScaleFactor:(float)scale;
++(UIView*)planeMapFromXmlData:(NSData*) content withPlaneMapDelegate:(id)planeMapDelegate withScaleFactor:(float)scale withSelectedElements:(NSArray*) selectedElements;
 
 @end

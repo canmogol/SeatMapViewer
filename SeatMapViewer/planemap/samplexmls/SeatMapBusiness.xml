@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SeatMap CabinConfig="246" CabinType="BUSINESS" CraftType="777-300" CabinRegId="JJE" abb="SF" desc="First Class">
+    <SeatMapRow RowNumber="45">
+        <CabinElement Type="BLANK"/>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="45A" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="45B" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="45C" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="45D" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="45E" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="45F" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="45G" SeatType="AVAILABLE">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="45H" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="45J" SeatType="AVAILABLE">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="45K" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="BLANK"/>
+    </SeatMapRow>
+    <SeatMapRow RowNumber="46">
+        <CabinElement Type="BLANK"/>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="46A" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="46B" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="46C" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="46D" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="46E" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="46F" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="46G" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="46H" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="46J" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="46K" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="BLANK"/>
+    </SeatMapRow>
+    <SeatMapRow RowNumber="47">
+        <CabinElement Type="BLANK"/>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="47A" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="47B" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="47C" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="47D" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="47E" SeatType="BLOCKED">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="47F" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="47G" SeatType="BLOCKED">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="47H" SeatType="AVAILABLE">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="47J" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="47K" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="BLANK"/>
+    </SeatMapRow>
+    <SeatMapRow RowNumber="48">
+        <CabinElement Type="BLANK"/>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="48A" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="48B" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="48C" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="48D" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="48E" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="48F" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="48G" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="48H" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="48J" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="48K" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="BLANK"/>
+    </SeatMapRow>
+    <SeatMapRow RowNumber="49">
+        <CabinElement Type="BLANK"/>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="49A" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="49B" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="49C" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="49D" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="49E" SeatType="AVAILABLE">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="49F" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="49G" SeatType="AVAILABLE">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="49H" SeatType="AVAILABLE">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="49J" SeatType="AVAILABLE">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="49K" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="BLANK"/>
+    </SeatMapRow>
+    <SeatMapRow RowNumber="50">
+        <CabinElement Type="BLANK"/>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="50A" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="50B" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="50C" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="50D" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="50E" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="50F" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="50G" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="50H" SeatType="AVAILABLE">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="50J" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="50K" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="BLANK"/>
+    </SeatMapRow>
+    <SeatMapRow RowNumber="51">
+        <CabinElement Type="BLANK"/>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="51A" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="51B" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="51C" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="51D" SeatType="AVAILABLE">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="51E" SeatType="AVAILABLE">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="51F" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="51G" SeatType="AVAILABLE">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="51H" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="51J" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="51K" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="BLANK"/>
+    </SeatMapRow>
+    <SeatMapRow RowNumber="52">
+        <CabinElement Type="BLANK"/>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="52A" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="52B" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="52C" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="52D" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="52E" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="52F" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="52G" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="52H" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="52J" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="52K" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="BLANK"/>
+    </SeatMapRow>
+    <SeatMapRow RowNumber="53">
+        <CabinElement Type="BLANK"/>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="53A" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="53B" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="53C" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="53D" SeatType="CHECKED_IN">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="53E" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="53F" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="53G" SeatType="AVAILABLE">
+                <Properties Aisle="true" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="false" SeatNumber="53H" SeatType="UNUSABLE"/>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="53J" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="false" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="true"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="false"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="SEAT">
+            <Seat IsOccupied="true" SeatNumber="53K" SeatType="CHECKED_IN">
+                <Properties Aisle="false" Basinet="false" Exit="false"
+                            ForTransit="false" HandyCap="true" LeastPreferable="false"
+                            NonSmoking="true" NotEnoughSpace="false" NotForInfant="false"
+                            NotForMedical="false" NotForYoung="false" Smoking="false" Window="true"/>
+            </Seat>
+        </CabinElement>
+        <CabinElement Type="BLANK"/>
+    </SeatMapRow>
+    <ColumnKeys/>
+    <ColumnKeys>A</ColumnKeys>
+    <ColumnKeys>B</ColumnKeys>
+    <ColumnKeys>C</ColumnKeys>
+    <ColumnKeys>D</ColumnKeys>
+    <ColumnKeys>E</ColumnKeys>
+    <ColumnKeys>F</ColumnKeys>
+    <ColumnKeys>G</ColumnKeys>
+    <ColumnKeys>H</ColumnKeys>
+    <ColumnKeys>J</ColumnKeys>
+    <ColumnKeys>K</ColumnKeys>
+    <ColumnKeys/>
+    <rowStartingIndex>23</rowStartingIndex>
+</SeatMap>
