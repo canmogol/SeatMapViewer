@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<view>
-    <element x="0" y="3" abb="VC" desc="VIDEO CENTER" type="video_center"/>
-    <element x="0" y="5" abb="CC" desc="CABIN EQUIPMENT CENTER" type="video_center"/>
-</view>

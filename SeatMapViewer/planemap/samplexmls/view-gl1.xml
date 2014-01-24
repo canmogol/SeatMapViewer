@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<view>
-    <element x="0" y="1" abb="G1" desc="GALLEY F-3" type="galley"/>
-    <element x="1" y="0" abb="G1" desc="GALLEY F-1" type="galley"/>
-    <element x="2" y="3" abb="LA" desc="Lavatory 1A-1C" type="lavatory"/>
-</view>

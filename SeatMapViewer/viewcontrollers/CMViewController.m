@@ -7,7 +7,6 @@
 //
 
 #import "CMViewController.h"
-#import "XmlToSeatMap.h"
 #import <UIKit/UIKit.h>
 
 @interface CMViewController ()

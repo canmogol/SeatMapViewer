@@ -21,24 +21,7 @@
 		C247B6FB186D71D0000872B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C247B6F9186D71D0000872B6 /* InfoPlist.strings */; };
 		C247B6FD186D71D0000872B6 /* SeatMapViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B6FC186D71D0000872B6 /* SeatMapViewerTests.m */; };
 		C247B77E186DAEAC000872B6 /* CMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B77D186DAEAC000872B6 /* CMViewController.m */; };
-		C247B7AA186DAF28000872B6 /* XmlToSeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B782186DAF28000872B6 /* XmlToSeatMap.m */; };
 		C247B7B4186DAF28000872B6 /* CMPlaneMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B790186DAF28000872B6 /* CMPlaneMap.m */; };
-		C247B7B5186DAF28000872B6 /* AftCabinMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B794186DAF28000872B6 /* AftCabinMap.m */; };
-		C247B7B6186DAF28000872B6 /* CabinElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B797186DAF28000872B6 /* CabinElement.m */; };
-		C247B7B7186DAF28000872B6 /* ForwardCabinMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B79A186DAF28000872B6 /* ForwardCabinMap.m */; };
-		C247B7B8186DAF28000872B6 /* Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B79E186DAF28000872B6 /* Properties.m */; };
-		C247B7B9186DAF28000872B6 /* Seat.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B7A1186DAF28000872B6 /* Seat.m */; };
-		C247B7BA186DAF28000872B6 /* SeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B7A4186DAF28000872B6 /* SeatMap.m */; };
-		C247B7BB186DAF28000872B6 /* SeatMapRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B7A7186DAF28000872B6 /* SeatMapRow.m */; };
-		C247B7BC186DAF28000872B6 /* SeatMapEconomy.xml in Resources */ = {isa = PBXBuildFile; fileRef = C247B7A9186DAF28000872B6 /* SeatMapEconomy.xml */; };
-		C247B7C3186DD9D6000872B6 /* UICabinView.m in Sources */ = {isa = PBXBuildFile; fileRef = C247B7C2186DD9D6000872B6 /* UICabinView.m */; };
-		C2A6CD9D188D69B500BED025 /* SeatMapBusiness.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CD9C188D69B500BED025 /* SeatMapBusiness.xml */; };
-		C2A6CD9F18915D7C00BED025 /* view-gl1.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CD9E18915D7C00BED025 /* view-gl1.xml */; };
-		C2A6CDA118915DE100BED025 /* view-cabin.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDA018915DE100BED025 /* view-cabin.xml */; };
-		C2A6CDA318915E4800BED025 /* view-video-center.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDA218915E4800BED025 /* view-video-center.xml */; };
-		C2A6CDA618915F0900BED025 /* view-crew-rest.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDA418915F0900BED025 /* view-crew-rest.xml */; };
-		C2A6CDA718915F0900BED025 /* view-emergency.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDA518915F0900BED025 /* view-emergency.xml */; };
-		C2A6CDA9189160AF00BED025 /* view-seats.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDA8189160AF00BED025 /* view-seats.xml */; };
 		C2A6CDAB18916F5D00BED025 /* plane.xml in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDAA18916F5D00BED025 /* plane.xml */; };
 		C2A6CDAE18919D3800BED025 /* CMXmlToView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A6CDAD18919D3800BED025 /* CMXmlToView.m */; };
 		C2A6CDB118919E1B00BED025 /* CMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A6CDB018919E1B00BED025 /* CMElement.m */; };
@@ -56,11 +39,8 @@
 		C2A6CDF91891DB8300BED025 /* lavatory.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE71891DB8300BED025 /* lavatory.png */; };
 		C2A6CDFA1891DB8300BED025 /* sb-seat.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE81891DB8300BED025 /* sb-seat.png */; };
 		C2A6CDFB1891DB8300BED025 /* se-seat.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDE91891DB8300BED025 /* se-seat.png */; };
-		C2A6CDFC1891DB8300BED025 /* sm_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDEA1891DB8300BED025 /* sm_blank.png */; };
 		C2A6CDFD1891DB8300BED025 /* exit_north.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDEB1891DB8300BED025 /* exit_north.png */; };
 		C2A6CDFE1891DB8300BED025 /* exit_south.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDEC1891DB8300BED025 /* exit_south.png */; };
-		C2A6CDFF1891DB8300BED025 /* sm_handicapped.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDED1891DB8300BED025 /* sm_handicapped.png */; };
-		C2A6CE001891DB8300BED025 /* sm_wing.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDEE1891DB8300BED025 /* sm_wing.png */; };
 		C2A6CE011891DB8300BED025 /* video_center.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A6CDEF1891DB8300BED025 /* video_center.png */; };
 /* End PBXBuildFile section */
 
@@ -94,36 +74,9 @@
 		C247B6FC186D71D0000872B6 /* SeatMapViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeatMapViewerTests.m; sourceTree = "<group>"; };
 		C247B77C186DAEAC000872B6 /* CMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMViewController.h; sourceTree = "<group>"; };
 		C247B77D186DAEAC000872B6 /* CMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMViewController.m; sourceTree = "<group>"; };
-		C247B781186DAF28000872B6 /* XmlToSeatMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlToSeatMap.h; sourceTree = "<group>"; };
-		C247B782186DAF28000872B6 /* XmlToSeatMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlToSeatMap.m; sourceTree = "<group>"; };
 		C247B78F186DAF28000872B6 /* CMPlaneMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPlaneMap.h; sourceTree = "<group>"; };
 		C247B790186DAF28000872B6 /* CMPlaneMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPlaneMap.m; sourceTree = "<group>"; };
-		C247B793186DAF28000872B6 /* AftCabinMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftCabinMap.h; sourceTree = "<group>"; };
-		C247B794186DAF28000872B6 /* AftCabinMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftCabinMap.m; sourceTree = "<group>"; };
-		C247B796186DAF28000872B6 /* CabinElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CabinElement.h; sourceTree = "<group>"; };
-		C247B797186DAF28000872B6 /* CabinElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CabinElement.m; sourceTree = "<group>"; };
-		C247B799186DAF28000872B6 /* ForwardCabinMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardCabinMap.h; sourceTree = "<group>"; };
-		C247B79A186DAF28000872B6 /* ForwardCabinMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardCabinMap.m; sourceTree = "<group>"; };
-		C247B79B186DAF28000872B6 /* ImportModelsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportModelsHeader.h; sourceTree = "<group>"; };
-		C247B79D186DAF28000872B6 /* Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Properties.h; sourceTree = "<group>"; };
-		C247B79E186DAF28000872B6 /* Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Properties.m; sourceTree = "<group>"; };
-		C247B7A0186DAF28000872B6 /* Seat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seat.h; sourceTree = "<group>"; };
-		C247B7A1186DAF28000872B6 /* Seat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seat.m; sourceTree = "<group>"; };
-		C247B7A3186DAF28000872B6 /* SeatMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeatMap.h; sourceTree = "<group>"; };
-		C247B7A4186DAF28000872B6 /* SeatMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeatMap.m; sourceTree = "<group>"; };
-		C247B7A6186DAF28000872B6 /* SeatMapRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeatMapRow.h; sourceTree = "<group>"; };
-		C247B7A7186DAF28000872B6 /* SeatMapRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeatMapRow.m; sourceTree = "<group>"; };
-		C247B7A9186DAF28000872B6 /* SeatMapEconomy.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SeatMapEconomy.xml; sourceTree = "<group>"; };
-		C247B7C1186DD9D6000872B6 /* UICabinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICabinView.h; sourceTree = "<group>"; };
-		C247B7C2186DD9D6000872B6 /* UICabinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICabinView.m; sourceTree = "<group>"; };
 		C247B7CD186F1E52000872B6 /* CMPlaneMapDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPlaneMapDelegate.h; sourceTree = "<group>"; };
-		C2A6CD9C188D69B500BED025 /* SeatMapBusiness.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SeatMapBusiness.xml; sourceTree = "<group>"; };
-		C2A6CD9E18915D7C00BED025 /* view-gl1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-gl1.xml"; sourceTree = "<group>"; };
-		C2A6CDA018915DE100BED025 /* view-cabin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-cabin.xml"; sourceTree = "<group>"; };
-		C2A6CDA218915E4800BED025 /* view-video-center.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-video-center.xml"; sourceTree = "<group>"; };
-		C2A6CDA418915F0900BED025 /* view-crew-rest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-crew-rest.xml"; sourceTree = "<group>"; };
-		C2A6CDA518915F0900BED025 /* view-emergency.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-emergency.xml"; sourceTree = "<group>"; };
-		C2A6CDA8189160AF00BED025 /* view-seats.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "view-seats.xml"; sourceTree = "<group>"; };
 		C2A6CDAA18916F5D00BED025 /* plane.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plane.xml; sourceTree = "<group>"; };
 		C2A6CDAC18919D3800BED025 /* CMXmlToView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMXmlToView.h; sourceTree = "<group>"; };
 		C2A6CDAD18919D3800BED025 /* CMXmlToView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMXmlToView.m; sourceTree = "<group>"; };
@@ -145,11 +98,8 @@
 		C2A6CDE71891DB8300BED025 /* lavatory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lavatory.png; sourceTree = "<group>"; };
 		C2A6CDE81891DB8300BED025 /* sb-seat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sb-seat.png"; sourceTree = "<group>"; };
 		C2A6CDE91891DB8300BED025 /* se-seat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "se-seat.png"; sourceTree = "<group>"; };
-		C2A6CDEA1891DB8300BED025 /* sm_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_blank.png; sourceTree = "<group>"; };
 		C2A6CDEB1891DB8300BED025 /* exit_north.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit_north.png; sourceTree = "<group>"; };
 		C2A6CDEC1891DB8300BED025 /* exit_south.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit_south.png; sourceTree = "<group>"; };
-		C2A6CDED1891DB8300BED025 /* sm_handicapped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_handicapped.png; sourceTree = "<group>"; };
-		C2A6CDEE1891DB8300BED025 /* sm_wing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_wing.png; sourceTree = "<group>"; };
 		C2A6CDEF1891DB8300BED025 /* video_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_center.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -286,8 +236,6 @@
 		C247B780186DAF28000872B6 /* converters */ = {
 			isa = PBXGroup;
 			children = (
-				C247B781186DAF28000872B6 /* XmlToSeatMap.h */,
-				C247B782186DAF28000872B6 /* XmlToSeatMap.m */,
 				C2A6CDAC18919D3800BED025 /* CMXmlToView.h */,
 				C2A6CDAD18919D3800BED025 /* CMXmlToView.m */,
 			);
@@ -317,11 +265,8 @@
 				C2A6CDE71891DB8300BED025 /* lavatory.png */,
 				C2A6CDE81891DB8300BED025 /* sb-seat.png */,
 				C2A6CDE91891DB8300BED025 /* se-seat.png */,
-				C2A6CDEA1891DB8300BED025 /* sm_blank.png */,
 				C2A6CDEB1891DB8300BED025 /* exit_north.png */,
 				C2A6CDEC1891DB8300BED025 /* exit_south.png */,
-				C2A6CDED1891DB8300BED025 /* sm_handicapped.png */,
-				C2A6CDEE1891DB8300BED025 /* sm_wing.png */,
 				C2A6CDEF1891DB8300BED025 /* video_center.png */,
 			);
 			path = smimages;
@@ -339,14 +284,6 @@
 		C247B791186DAF28000872B6 /* nodes */ = {
 			isa = PBXGroup;
 			children = (
-				C247B792186DAF28000872B6 /* AftCabinMap */,
-				C247B795186DAF28000872B6 /* CabinElement */,
-				C247B798186DAF28000872B6 /* ForwardCabinMap */,
-				C247B79B186DAF28000872B6 /* ImportModelsHeader.h */,
-				C247B79C186DAF28000872B6 /* Properties */,
-				C247B79F186DAF28000872B6 /* Seat */,
-				C247B7A2186DAF28000872B6 /* SeatMap */,
-				C247B7A5186DAF28000872B6 /* SeatMapRow */,
 				C2A6CDAF18919E1B00BED025 /* CMElement.h */,
 				C2A6CDB018919E1B00BED025 /* CMElement.m */,
 				C2A6CDB21891A12900BED025 /* CMView.h */,
@@ -355,80 +292,9 @@
 			path = nodes;
 			sourceTree = "<group>";
 		};
-		C247B792186DAF28000872B6 /* AftCabinMap */ = {
-			isa = PBXGroup;
-			children = (
-				C247B793186DAF28000872B6 /* AftCabinMap.h */,
-				C247B794186DAF28000872B6 /* AftCabinMap.m */,
-			);
-			path = AftCabinMap;
-			sourceTree = "<group>";
-		};
-		C247B795186DAF28000872B6 /* CabinElement */ = {
-			isa = PBXGroup;
-			children = (
-				C247B796186DAF28000872B6 /* CabinElement.h */,
-				C247B797186DAF28000872B6 /* CabinElement.m */,
-			);
-			path = CabinElement;
-			sourceTree = "<group>";
-		};
-		C247B798186DAF28000872B6 /* ForwardCabinMap */ = {
-			isa = PBXGroup;
-			children = (
-				C247B799186DAF28000872B6 /* ForwardCabinMap.h */,
-				C247B79A186DAF28000872B6 /* ForwardCabinMap.m */,
-			);
-			path = ForwardCabinMap;
-			sourceTree = "<group>";
-		};
-		C247B79C186DAF28000872B6 /* Properties */ = {
-			isa = PBXGroup;
-			children = (
-				C247B79D186DAF28000872B6 /* Properties.h */,
-				C247B79E186DAF28000872B6 /* Properties.m */,
-			);
-			path = Properties;
-			sourceTree = "<group>";
-		};
-		C247B79F186DAF28000872B6 /* Seat */ = {
-			isa = PBXGroup;
-			children = (
-				C247B7A0186DAF28000872B6 /* Seat.h */,
-				C247B7A1186DAF28000872B6 /* Seat.m */,
-			);
-			path = Seat;
-			sourceTree = "<group>";
-		};
-		C247B7A2186DAF28000872B6 /* SeatMap */ = {
-			isa = PBXGroup;
-			children = (
-				C247B7A3186DAF28000872B6 /* SeatMap.h */,
-				C247B7A4186DAF28000872B6 /* SeatMap.m */,
-			);
-			path = SeatMap;
-			sourceTree = "<group>";
-		};
-		C247B7A5186DAF28000872B6 /* SeatMapRow */ = {
-			isa = PBXGroup;
-			children = (
-				C247B7A6186DAF28000872B6 /* SeatMapRow.h */,
-				C247B7A7186DAF28000872B6 /* SeatMapRow.m */,
-			);
-			path = SeatMapRow;
-			sourceTree = "<group>";
-		};
 		C247B7A8186DAF28000872B6 /* samplexmls */ = {
 			isa = PBXGroup;
 			children = (
-				C2A6CDA8189160AF00BED025 /* view-seats.xml */,
-				C2A6CDA418915F0900BED025 /* view-crew-rest.xml */,
-				C2A6CDA518915F0900BED025 /* view-emergency.xml */,
-				C2A6CDA218915E4800BED025 /* view-video-center.xml */,
-				C2A6CDA018915DE100BED025 /* view-cabin.xml */,
-				C2A6CD9C188D69B500BED025 /* SeatMapBusiness.xml */,
-				C247B7A9186DAF28000872B6 /* SeatMapEconomy.xml */,
-				C2A6CD9E18915D7C00BED025 /* view-gl1.xml */,
 				C2A6CDAA18916F5D00BED025 /* plane.xml */,
 			);
 			path = samplexmls;
@@ -437,8 +303,6 @@
 		C247B7C0186DD9D6000872B6 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				C247B7C1186DD9D6000872B6 /* UICabinView.h */,
-				C247B7C2186DD9D6000872B6 /* UICabinView.m */,
 				C247B7CD186F1E52000872B6 /* CMPlaneMapDelegate.h */,
 				C2A6CDB51891B22800BED025 /* UIElement.h */,
 				C2A6CDB61891B22800BED025 /* UIElement.m */,
@@ -524,34 +388,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A6CDFB1891DB8300BED025 /* se-seat.png in Resources */,
-				C2A6CDA718915F0900BED025 /* view-emergency.xml in Resources */,
 				C247B6EA186D71D0000872B6 /* Images.xcassets in Resources */,
-				C2A6CD9D188D69B500BED025 /* SeatMapBusiness.xml in Resources */,
 				C247B6DC186D71D0000872B6 /* InfoPlist.strings in Resources */,
 				C2A6CDAB18916F5D00BED025 /* plane.xml in Resources */,
 				C2A6CDF21891DB8300BED025 /* emergency_ditching.png in Resources */,
 				C2A6CDF81891DB8300BED025 /* galley.png in Resources */,
 				C2A6CDF91891DB8300BED025 /* lavatory.png in Resources */,
-				C2A6CDFF1891DB8300BED025 /* sm_handicapped.png in Resources */,
 				C2A6CDF61891DB8300BED025 /* emergency_lighting_sign.png in Resources */,
-				C2A6CDA9189160AF00BED025 /* view-seats.xml in Resources */,
 				C2A6CE011891DB8300BED025 /* video_center.png in Resources */,
 				C2A6CDFE1891DB8300BED025 /* exit_south.png in Resources */,
 				C2A6CDF71891DB8300BED025 /* emergency_miscellaneous.png in Resources */,
 				C247B6E5186D71D0000872B6 /* Main.storyboard in Resources */,
 				C2A6CDFD1891DB8300BED025 /* exit_north.png in Resources */,
-				C247B7BC186DAF28000872B6 /* SeatMapEconomy.xml in Resources */,
-				C2A6CD9F18915D7C00BED025 /* view-gl1.xml in Resources */,
 				C2A6CDFA1891DB8300BED025 /* sb-seat.png in Resources */,
-				C2A6CE001891DB8300BED025 /* sm_wing.png in Resources */,
-				C2A6CDFC1891DB8300BED025 /* sm_blank.png in Resources */,
 				C2A6CDF01891DB8300BED025 /* cabin.png in Resources */,
 				C2A6CDF11891DB8300BED025 /* crew_rest.png in Resources */,
-				C2A6CDA118915DE100BED025 /* view-cabin.xml in Resources */,
 				C2A6CDF31891DB8300BED025 /* emergency_exit.png in Resources */,
 				C2A6CDF41891DB8300BED025 /* emergency_fire.png in Resources */,
-				C2A6CDA618915F0900BED025 /* view-crew-rest.xml in Resources */,
-				C2A6CDA318915E4800BED025 /* view-video-center.xml in Resources */,
 				C2A6CDF51891DB8300BED025 /* emergency_first_aid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,21 +424,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C247B7B9186DAF28000872B6 /* Seat.m in Sources */,
 				C2A6CDB118919E1B00BED025 /* CMElement.m in Sources */,
 				C247B7B4186DAF28000872B6 /* CMPlaneMap.m in Sources */,
-				C247B7AA186DAF28000872B6 /* XmlToSeatMap.m in Sources */,
-				C247B7B5186DAF28000872B6 /* AftCabinMap.m in Sources */,
 				C247B77E186DAEAC000872B6 /* CMViewController.m in Sources */,
 				C2A6CDAE18919D3800BED025 /* CMXmlToView.m in Sources */,
-				C247B7B7186DAF28000872B6 /* ForwardCabinMap.m in Sources */,
-				C247B7B8186DAF28000872B6 /* Properties.m in Sources */,
 				C2A6CDB71891B22800BED025 /* UIElement.m in Sources */,
 				C247B6E2186D71D0000872B6 /* CMAppDelegate.m in Sources */,
-				C247B7B6186DAF28000872B6 /* CabinElement.m in Sources */,
-				C247B7BA186DAF28000872B6 /* SeatMap.m in Sources */,
-				C247B7BB186DAF28000872B6 /* SeatMapRow.m in Sources */,
-				C247B7C3186DD9D6000872B6 /* UICabinView.m in Sources */,
 				C2A6CDB41891A12900BED025 /* CMView.m in Sources */,
 				C247B6DE186D71D0000872B6 /* main.m in Sources */,
 			);
