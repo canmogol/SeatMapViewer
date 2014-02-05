@@ -22,4 +22,6 @@
 
 +(UIView*)planeMapFromXmlData:(NSData*) content withPlaneMapDelegate:(id)planeMapDelegate withScaleFactor:(float)scale withSelectedElements:(NSArray*) selectedElements;
 
++(UIView*)lagendMapFromXmlData:(NSData*) content withPlaneMapDelegate:(id)planeMapDelegate withScaleFactor:(float)scale;
+
 @end

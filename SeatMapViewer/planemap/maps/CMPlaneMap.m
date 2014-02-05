@@ -17,13 +17,49 @@
     self = [super init];
     if (self) {
         scaleFactor = scale;
-        unitHeight = 65*scaleFactor;
+        unitHeight = 30*scaleFactor;
         unitWidth = 65*scaleFactor;
         imagesAndDescription = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
 
+
++(UIView*)lagendMapFromXmlData:(NSData*) content withPlaneMapDelegate:(id)planeMapDelegate withScaleFactor:(float)scale{
+    CMPlaneMap* cmp = [[CMPlaneMap alloc] initWithScaleFactor:scale];
+    [cmp setPlaneMapDelegate:planeMapDelegate];
+    
+    // create a plane map view
+    UIView* planeMapView = [[UIView alloc] init];
+    [planeMapView setBackgroundColor:[UIColor grayColor]];
+    [planeMapView setBackgroundColor:[UIColor whiteColor]];
+    planeMapView.layer.borderColor = [UIColor blackColor].CGColor;
+    planeMapView.layer.borderWidth = 1.0f;
+    
+    // parse the xml to an array of CMView objects
+    CMXmlToView* xmlToView = [[CMXmlToView alloc] init];
+    NSMutableArray* views = [xmlToView parseXml:content];
+    
+    for(CMView* v in views){
+        // if the view is attached to the bottom of the plane map, add them later
+        if([[v lagend]isEqualToString:@"true"]){
+            // for each CMView object, create a UIView
+            UIView* view = [cmp createUIView: v];
+            view.frame = CGRectMake(planeMapView.frame.size.width, 0, view.frame.size.width, view.frame.size.height);
+            
+            // set the width and height of the plane map view
+            float width = planeMapView.frame.size.width + view.frame.size.width;
+            float height = MAX(view.frame.origin.y+view.frame.size.height, planeMapView.frame.size.height);
+            planeMapView.frame = CGRectMake(0, 0, width, height);
+            
+            // add eachview to planeMapView
+            [planeMapView addSubview:view];
+        }
+    }
+    
+    // return plane map view
+    return planeMapView;
+}
 
 +(UIView*)planeMapFromXmlData:(NSData*) content withPlaneMapDelegate:(id)planeMapDelegate withScaleFactor:(float)scale withSelectedElements:(NSArray*) selectedElements{
     CMPlaneMap* cmp = [[CMPlaneMap alloc] initWithScaleFactor:scale];
@@ -44,21 +80,23 @@
     
     
     for(CMView* v in views){
-        // if the view is attached to the bottom of the plane map, add them later
-        if([[v attached]isEqualToString:@"true"]){
-            [attachedViews addObject:v];
-        }else{
-            // for each CMView object, create a UIView
-            UIView* view = [cmp createUIView: v];
-            view.frame = CGRectMake(planeMapView.frame.size.width, 0, view.frame.size.width, view.frame.size.height);
-            
-            // set the width and height of the plane map view
-            float width = planeMapView.frame.size.width + view.frame.size.width;
-            float height = MAX(view.frame.origin.y+view.frame.size.height, planeMapView.frame.size.height);
-            planeMapView.frame = CGRectMake(0, 0, width, height);
-            
-            // add eachview to planeMapView
-            [planeMapView addSubview:view];
+        if(![[v lagend]isEqualToString:@"true"]){
+            // if the view is attached to the bottom of the plane map, add them later
+            if([[v attached]isEqualToString:@"true"]){
+                [attachedViews addObject:v];
+            }else{
+                // for each CMView object, create a UIView
+                UIView* view = [cmp createUIView: v];
+                view.frame = CGRectMake(planeMapView.frame.size.width, 0, view.frame.size.width, view.frame.size.height);
+                
+                // set the width and height of the plane map view
+                float width = planeMapView.frame.size.width + view.frame.size.width;
+                float height = MAX(view.frame.origin.y+view.frame.size.height, planeMapView.frame.size.height);
+                planeMapView.frame = CGRectMake(0, 0, width, height);
+                
+                // add eachview to planeMapView
+                [planeMapView addSubview:view];
+            }
         }
     }
     

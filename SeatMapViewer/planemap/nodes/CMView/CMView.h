@@ -14,5 +14,6 @@
 @property (nonatomic, retain) NSString* name;
 @property (nonatomic, retain) NSString* desc;
 @property (nonatomic, retain) NSString* attached;
+@property (nonatomic, retain) NSString* lagend;
 
 @end

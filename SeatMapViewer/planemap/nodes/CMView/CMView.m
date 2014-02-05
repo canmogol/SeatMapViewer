@@ -10,7 +10,7 @@
 
 @implementation CMView
 
-@synthesize elements, name, desc, attached;
+@synthesize elements, name, desc, attached, lagend;
 
 - (id)init
 {

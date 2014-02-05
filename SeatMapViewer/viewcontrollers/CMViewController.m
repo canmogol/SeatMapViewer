@@ -36,8 +36,6 @@
     // and if any of the items tapped on the screen it will send the object to the delegate
     UIView* planeView = [CMPlaneMap planeMapFromXmlData: contentData withPlaneMapDelegate:self withScaleFactor:1.0f withSelectedElements:selectedElements];
 
-
-    
     // below are visual aids, may be discarded
     // set scroll view's width and height
     self.planeMapView.contentSize = CGSizeMake(planeView.frame.size.width, planeView.frame.size.height);
@@ -49,32 +47,12 @@
     
     
     
-    
-    
-    // sample xml data
-    // get the content data from somewhere meaningful like a server side operation or a web service,
-    // this is only for testing purposes
-    file = [[NSBundle mainBundle] pathForResource:@"lagend" ofType:@"xml"];
-    contentData = [[NSData alloc] initWithContentsOfFile:file];
-    
-    
-    
-    selectedElements = [[NSMutableArray alloc] init];
-    
-    
-    // This is it!
-    // this call will create a planeView from the content data
-    // and if any of the items tapped on the screen it will send the object to the delegate
-    UIView* lagendView = [CMPlaneMap planeMapFromXmlData: contentData withPlaneMapDelegate:self withScaleFactor:1.0f withSelectedElements:selectedElements];
+    UIView* lagendView = [CMPlaneMap lagendMapFromXmlData: contentData withPlaneMapDelegate:self withScaleFactor:1.0f];
     
     lagendView.frame = CGRectMake(0, planeView.frame.size.height+10, lagendView.frame.size.width, lagendView.frame.size.height);
 
-    
     [[self view] addSubview:lagendView];
     [[self view] setNeedsDisplay];
-    
-
-    
     
 }
 
