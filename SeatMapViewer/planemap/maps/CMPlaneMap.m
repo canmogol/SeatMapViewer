@@ -17,7 +17,7 @@
     self = [super init];
     if (self) {
         scaleFactor = scale;
-        unitHeight = 30*scaleFactor;
+        unitHeight = 65*scaleFactor;
         unitWidth = 65*scaleFactor;
         imagesAndDescription = [[NSMutableDictionary alloc] init];
     }
