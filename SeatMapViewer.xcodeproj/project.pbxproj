@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C23A3B0E18A27EDC00E5A153 /* lagend.xml in Resources */ = {isa = PBXBuildFile; fileRef = C23A3B0D18A27EDC00E5A153 /* lagend.xml */; };
 		C247B6D2186D71D0000872B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C247B6D1186D71D0000872B6 /* Foundation.framework */; };
 		C247B6D4186D71D0000872B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C247B6D3186D71D0000872B6 /* CoreGraphics.framework */; };
 		C247B6D6186D71D0000872B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C247B6D5186D71D0000872B6 /* UIKit.framework */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C23A3B0D18A27EDC00E5A153 /* lagend.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lagend.xml; sourceTree = "<group>"; };
 		C247B6CE186D71D0000872B6 /* SeatMapViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeatMapViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C247B6D1186D71D0000872B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C247B6D3186D71D0000872B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -295,6 +297,7 @@
 		C247B7A8186DAF28000872B6 /* samplexmls */ = {
 			isa = PBXGroup;
 			children = (
+				C23A3B0D18A27EDC00E5A153 /* lagend.xml */,
 				C2A6CDAA18916F5D00BED025 /* plane.xml */,
 			);
 			path = samplexmls;
@@ -399,6 +402,7 @@
 				C2A6CDFE1891DB8300BED025 /* exit_south.png in Resources */,
 				C2A6CDF71891DB8300BED025 /* emergency_miscellaneous.png in Resources */,
 				C247B6E5186D71D0000872B6 /* Main.storyboard in Resources */,
+				C23A3B0E18A27EDC00E5A153 /* lagend.xml in Resources */,
 				C2A6CDFD1891DB8300BED025 /* exit_north.png in Resources */,
 				C2A6CDFA1891DB8300BED025 /* sb-seat.png in Resources */,
 				C2A6CDF01891DB8300BED025 /* cabin.png in Resources */,

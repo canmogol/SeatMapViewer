@@ -108,9 +108,13 @@
         }
         
         // set default properties; text, background, border etc.
-        if([[el properties] objectForKey:@"text"]){
+        if([[el properties] objectForKey:@"lagend-text"]){
+            [uie addSubview:[self createLagendLabel: [[el properties] objectForKey:@"lagend-text"]]];
+            uie.frame = CGRectMake(x, y, unitWidth*3, unitHeight);
+   
+        }else if([[el properties] objectForKey:@"text"]){
             [uie addSubview:[self createLabel: [[el properties] objectForKey:@"text"]]];
-
+            
         }else if([[el properties] objectForKey:@"background-color"]){
             [uie setBackgroundColor:[self colorFromHexString: [[el properties] objectForKey:@"background-color"]]];
 
@@ -143,7 +147,6 @@
         float width = MAX(uie.frame.origin.x+uie.frame.size.width, uiv.frame.size.width);
         float height = MAX(uie.frame.origin.y+uie.frame.size.height, uiv.frame.size.height);
         uiv.frame = CGRectMake(0, 0, width, height);
-        
         // add this uie to uiv
         [uiv addSubview:uie];
     }
@@ -172,6 +175,15 @@
     UILabel* textLabel = [[UILabel alloc] init];
     textLabel.frame = CGRectMake(unitWidth/3, 0, unitWidth, unitHeight);
     [textLabel setText:text];
+    textLabel.font = [UIFont systemFontOfSize:18*scaleFactor];
+    return textLabel;
+}
+
+-(UILabel*) createLagendLabel: (NSString*) text{
+    UILabel* textLabel = [[UILabel alloc] init];
+    textLabel.frame = CGRectMake(unitWidth/3, 0, unitWidth, unitHeight);
+    [textLabel setText:text];
+    textLabel.frame = CGRectMake(5, 0, unitWidth*3, unitHeight);
     textLabel.font = [UIFont systemFontOfSize:18*scaleFactor];
     return textLabel;
 }
